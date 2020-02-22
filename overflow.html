@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        width: auto;
+    }
+
+    .wrapper>div {
+        pointer-events: none;
+        flex: 0 0 auto;
+        width: 2000px;
+        height: 500px;
+    }
+
+</style>
+
+<body>
+
+    <main style="overflow: scroll hidden;">
+        <div class="wrapper">
+            <div style="background-color:red;"></div>
+            <div style="background-color:blue"></div>
+        </div>
+    </main>
+
+
+    <div style="height: 9000px; width: 50px; background-color: aqua;">
+        
+    </div>
+
+</body>
+
+<script>
+    var landscape = document.getElementsByTagName('MAIN')[0];
+
+    window.addEventListener('wheel', function (e) {
+        if (e.deltaY > 0) landscape.scrollLeft += 10;
+        else landscape.scrollLeft -= 10;
+    });
+</script>
+
+</html>

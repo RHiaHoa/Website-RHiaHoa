@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link href="../asserts/css/background_vdo.css" rel="stylesheet">
+    <link href="../asserts/css/main.css" rel="stylesheet">
+    <link href="./asserts/css/flip_card.css" rel="stylesheet">
+    <link href="../asserts/css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- /* ////////// menu-social ///////// */ -->
+    <section>
+        <div>
+            <div class="menu-social shadow d-flex flex-column align-items-center justify-content-center">
+
+                <div
+                    class="bt-menu-social shadow d-flex align-items-center justify-content-center pointer hover-orange">
+                    <i class="fas fa-chevron-right fonts-size-1 icon-bt-social"></i>
+                </div>
+
+                <div class="bt-menu-social-2">
+
+                </div>
+
+                <div class="d-flex flex-column align-items-center justify-content-center" style="z-index: 4;">
+
+                    <a href="https://www.facebook.com/Burinsampanwatsopa"
+                        class="icon-hover d-flex justify-content-center align-items-center flex-column" target="_blank">
+                        <i class="fab fa-facebook icon-social color-facabook"></i>
+                        <p class="fonts-size-1-2 m-0 mt-2 color-2">Facebook</p>
+                    </a>
+
+                    <a href="https://www.instagram.com/burin.41/"
+                        class="icon-hover d-flex justify-content-center align-items-center flex-column mt-5"
+                        target="_blank">
+                        <img class="img-social" src="./asserts/img/instagram-sketched.svg">
+                        <p class="fonts-size-1-2 m-0 mt-2 color-2">Instagram</p>
+                    </a>
+
+                    <a data-toggle="modal" data-target=".bd-example-modal-line"
+                        class="icon-hover d-flex justify-content-center align-items-center flex-column mt-5 pointer">
+                        <i class="fab fa-line icon-social color-line"></i>
+                        <p class="fonts-size-1-2 m-0 mt-2 color-2">Line</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal fade bd-example-modal-line" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="./asserts/img/QRCode Line.jpg" class="w-100">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- /* ////////// End menu-social ///////// */ -->
+
+
+
+    <!-- /* ////////// navbar ///////// */ -->
+    <section>
+        <div class="w-100 nav-bar position-fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="active-logo-nav">
+                            <img src="./asserts/img/logo-nav.svg" class="size-logo-nav pointer">
+                        </div>
+                    </div>
+                    <div class="col-9 d-flex justify-content-end align-items-center" id="myScrollspy">
+
+                        <div class="menu-pc">
+
+                            <a class="pointer mr-5 fonts-size-1 fonts hover-orange color-2 active-cus" id="bt-home">
+                                Home
+                            </a>
+
+                            <a class="pointer mr-5 ml-5 fonts-size-1 fonts hover-orange color-2" id="bt-about">
+                                About
+                            </a>
+
+                            <a class="pointer mr-5 ml-5 fonts-size-1 fonts hover-orange" id="bt-services">
+                                Services
+                            </a>
+
+                            <a class="pointer mr-5 ml-5 fonts-size-1 fonts hover-orange">
+                                Portfolio
+                            </a>
+
+                            <a class="pointer ml-5 fonts-size-1 fonts hover-orange" onclick="activebell()">
+                                Contact
+                            </a>
+
+                        </div>
+
+                        <div class="bt-menu-mobile">
+                            <a class="pointer" data-toggle="collapse" data-target="#menu-mobile-slide"
+                                aria-expanded="false" aria-controls="menu-mobile-slide"><i
+                                    class="fas fa-bars fonts-size-1"></i> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse mt-5 " id="menu-mobile-slide">
+                    <div class="d-flex flex-column">
+
+                        <a class="pointer pt-4 pb-4 fonts-size-1 fonts hover-orange border-set">
+                            Home
+                        </a>
+
+                        <a class="pointer pt-4 pb-4 fonts-size-1 fonts hover-orange border-set">
+                            About
+                        </a>
+
+                        <a class="pointer pt-4 pb-4 fonts-size-1 fonts hover-orange border-set">
+                            Services
+
+                        </a>
+
+                        <a class="pointer pt-4 pb-4 fonts-size-1 fonts hover-orange border-set">
+                            Portfolio
+
+                        </a>
+
+                        <a class="pointer pt-4 pb-4 fonts-size-1 fonts hover-orange border-set">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /* ////////// End navbar ///////// */ -->
+
+
+
+    <!-- /* ////////// area 1 ///////// */ -->
+    <section id="area1">
+        <div>
+            <div class="div-vdo">
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="/asserts/video/video.mp4" type="video/mp4">
+                </video>
+                <div class="container h-100">
+                    <div class="d-flex h-100 text-center align-items-center">
+                        <div class="w-100 text-white">
+                            <div class="mb-2">
+                                <p><span class="display-4 text-head-vdo">RHIAHO</span><span class="display-4">A</span>
+                                </p>
+                            </div>
+                            <p class="lead mb-0 fonts-size-1 text-detail-vdo">templates by RHiaHoa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /* ////////// End area 1 ///////// */ -->
+
+
+
+    <!-- /* ////////// area 2 ///////// */ -->
+    <section id="area2">
+        <div>
+            <div class="container mb-5">
+                <div class="container div-area-2 shadow-sm border-radius-div">
+
+                    <div class="w-100 img-area-2 bg-fixde">
+
+                    </div>
+
+
+                    <div class="mt-5 ">
+                        <p class="text-uppercase text-name-area2 fonts-head"><span class="color-2">Burin</span> <span
+                                class="color-1">RHaiaHoa</span>
+                        </p>
+                    </div>
+
+
+                    <div class="div-text-address-area2 mb-5 mt-4">
+                        <p class="text-uppercase text-address-area2 fonts"><span class="color-2"> 3542 BERRY STREET ·
+                                CHEYENNE
+                                WELLS, CO 80810
+                                · 66 (0) 97-194-9445 · </span> <span class="color-1">xhoa_2541@hotEMAIL.COM</span></p>
+                    </div>
+
+                    <hr>
+
+                    <p class=" text-detail-area2 fonts-detail mt-5">
+                        User experience design (UXD, UED, or XD) is the process of manipulating user behavior[1] through
+                        usability, accessibility, and desirability provided in the interaction with a product. User
+                        experience
+                        design encompasses traditional human–computer interaction (HCI) design and extends it by
+                        addressing
+                        all
+                        aspects of a product or service as perceived by users. Experience design (XD) is the practice of
+                        designing products, processes, services, events, omnichannel journeys, and environments with a
+                        focus
+                        placed on the quality of the user experience and culturally relevant solutions.[2] Experience
+                        design
+                        is
+                        not driven by a single design discipline. Instead, it requires a cross-discipline perspective
+                        that
+                        considers multiple aspects of the brand/ business/ environment/ experience from product,
+                        packaging,
+                        and
+                        retail environment to the clothing and attitude of employees. Experience design seeks to develop
+                        the
+                        experience of a product, service, or event along any or all of the following dimensions:
+                    </p>
+
+                    <div class="mt-5  text-social-area2 ">
+                        <a href="#"><i class="fab fa-github text-social-area2-active"></i></a>
+                        <a href="#"> <i class="fab fa-twitter-square text-social-area2-active"></i></a>
+                        <a href="#"> <i class="fab fa-facebook text-social-area2-active"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /* ////////// End area 2 ///////// */ -->
+
+
+
+    <!-- /* ////////// area 3 ///////// */ -->
+    <section id="area3">
+        <div class="container pb-5">
+            <div class="row">
+
+                <div class="col-md-6 col-res col-lg-3 animate-1" id="img-animate-1">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/asserts/img/profile/1533649080255.jpg" class="crop-img w-100 img-area-3">
+                            </div>
+                            <div class="flip-card-back p-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <h1><i class="fas fa-map-marker-alt fonts-size-1-2"></i> Jantaburi</h1>
+                                    <p class="fonts-size-1 text-letter-footter m-0 mt-3">08 January 2018</p>
+                                    <p class="fonts-size-1-2 mt-2">Location : Jantaburi Province</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-res col-lg-3 animate-1" id="img-animate-2">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="asserts/img/profile/IMG20171216092240.jpg" class="crop-img w-100  img-area-3">
+                            </div>
+                            <div class="flip-card-back p-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <h1><i class="fas fa-map-marker-alt fonts-size-1-2"></i> Kanchanaburi</h1>
+                                    <p class="fonts-size-1 text-letter-footter m-0 mt-3">08 January 2018</p>
+                                    <p class="fonts-size-1-2 mt-2">Location : Kanchanaburi Province</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-res col-lg-3 animate-1" id="img-animate-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="asserts/img/profile/437092.jpg" class="crop-img w-100  img-area-3">
+                            </div>
+                            <div class="flip-card-back p-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <h1><i class="fas fa-map-marker-alt fonts-size-1-2"></i> Trad</h1>
+                                    <p class="fonts-size-1 text-letter-footter m-0 mt-3">08 January 2018</p>
+                                    <p class="fonts-size-1-2 mt-2">Location : Trad Province</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-res col-lg-3 animate-1" id="img-animate-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="asserts/img/profile/20191024_151004.jpg" class="crop-img w-100  img-area-3">
+                            </div>
+                            <div class="flip-card-back p-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <h1><i class="fas fa-map-marker-alt fonts-size-1-2"></i> Prachuap Khiri Khan</h1>
+                                    <p class="fonts-size-1 text-letter-footter m-0 mt-3">08 January 2018</p>
+                                    <p class="fonts-size-1-2 mt-2">Location : Prachuap Khiri Khan Province</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /* ////////// End area 3 ///////// */ -->
+
+
+
+    <!-- /* ////////// map ///////// */ -->
+    <section>
+        <div id="googleMap" class="size-map mt-5"></div>
+    </section>
+    <!-- /* ////////// end map ///////// */ -->
+
+
+
+    <!-- /* ////////// loading ///////// */ -->
+    <section>
+        <div id="loading">
+            <div class="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <!-- /* ////////// End loading ///////// */ -->
+
+
+
+    <!-- <div id="section-landscape">
+        <section >
+            <main style="overflow: scroll hidden;">
+                <div class="wrapper">
+                    <div style="background-color:red;"></div>
+                    <div style="background-color:blue"></div>
+                </div>
+            </main>
+        </section>
+    </div> -->
+    
+
+
+    <!-- /* ////////// footer ///////// */ -->
+    <footer>
+        <div class="shadow" style="position: relative;">
+            <div class="container pt-5 ">
+                <img src="./asserts/img/logo-nav.svg" class="logo-footer mb-5">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="fonts-detail">
+                            <p class="m-0 fonts-head fonts-size-1 mb-3 color-2">CONTACT US</p>
+                            <p class="fonts-size-1">Cecilia Chapman
+                                711-2880 Nulla St.
+                                Mankato Mississippi 96522
+                                66 (0) 97-194-9445
+                            </p>
+                            <p class="m-0 fonts-size-1">
+                                TEL: 66 (0) 97-194-9445
+                            </p>
+                            <p class="m-0 fonts-size-1">
+                                Email: xhoa_2541@hotmail.com
+                            </p>
+                            <div class="mt-3 ">
+                                <div class="d-flex align-items-center "><i
+                                        class="fas fa-question-circle mr-3 fonts-size-1 color-2"></i>
+                                    <span class="fonts-size-1"> Have a question?
+                                    </span>
+                                </div>
+                                <div class="d-flex align-items-center mt-2">
+                                    <i class="fas fa-comment-alt mr-3 fonts-size-1 color-2"></i>
+                                    <a class="fonts-size-1" href="#">Frequently asked question (FAQ)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container pt-5 pb-5 d-flex align-items-center justify-content-center">
+
+                    <a href="#">
+                        <i class="ml-5 mr-4 fab color-1 fa-facebook-f size-icon-footer "> </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ml-4 mr-4 fab color-1 fa-twitter size-icon-footer "> </i>
+                    </a>
+
+                    <a clahref="#">
+                        <i class="ml-4 mr-4 fab color-1 fa-google-plus-g size-icon-footer "> </i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ml-4 mr-4 fab color-1 fa-linkedin-in size-icon-footer "> </i>
+                    </a>
+
+                    <a chref="#">
+                        <i class="ml-4 mr-4 fab color-1 fa-instagram size-icon-footer "> </i>
+                    </a>
+
+                    <a chref="#">
+                        <i class="ml-4 mr-4 fab color-1 fa-pinterest size-icon-footer"> </i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="bg-color-2 d-flex align-items-center justify-content-center fonts-detail color-3 pt-3 pb-3">
+                <p class="m-0 fonts-size-1 mr-3 text-letter-footter"> © 2020 templates:</p>
+                <a href="https://mdbootstrap.com/education/bootstrap/"
+                    class="fonts-size-1 color-3 text-letter-footter">RHiaHoa.com</a>
+            </div>
+        </div>
+    </footer>
+    <!-- /* ////////// End footer ///////// */ -->
+
+</body>
+
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<!-- googal map -->
+<script>
+    function initMap() {
+        var uluru = {
+            lat: 13.289386,
+            lng: 100.930221
+        };
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSri6xDweSFsQ2ELKMOxNgmBmAgQH-xmM&callback=initMap">
+</script>
+<!-- end googal map -->
+
+<script src="./node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+
+<script>
+    var waypoint = new Waypoint({
+        element: document.getElementById('area2'),
+        handler: function (direction) {
+            if (direction == "up") {
+                $("#bt-home").addClass("active-cus");
+                $("#bt-about").removeClass("active-cus");
+            } else {
+                $("#bt-home").removeClass("active-cus");
+                $("#bt-about").addClass("active-cus");
+                setTimeout(
+                    function () {
+                        $("#img-animate-1").addClass("active-animate-1");
+                    }, 300);
+                setTimeout(
+                    function () {
+                        $("#img-animate-2").addClass("active-animate-1");
+                    }, 500);
+
+                setTimeout(
+                    function () {
+                        $("#img-animate-3").addClass("active-animate-1");
+                    }, 700);
+
+                setTimeout(
+                    function () {
+                        $("#img-animate-4").addClass("active-animate-1");
+                    }, 900);
+            }
+        }
+    })
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('area3'),
+        handler: function (direction) {
+            if (direction == "up") {
+                $("#bt-services").removeClass("active-cus");
+                $("#bt-about").addClass("active-cus");
+            } else {
+                $("#bt-services").addClass("active-cus");
+                $("#bt-about").removeClass("active-cus");
+            }
+        }
+    })
+
+
+    $("#bt-about").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#area2").offset().top
+        }, 500);
+    });
+
+    $("#bt-services").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#area3").offset().top
+        }, 500);
+    });
+
+    $("#bt-home").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#area1").offset().top
+        }, 500);
+    });
+
+    // activeScroll()
+    window.addEventListener("scroll", function (event) {
+        var scroll = this.scrollY;
+        var nav = document.getElementsByClassName("nav-bar")
+        console.log(scroll)
+        if (scroll > 0) {
+            nav[0].classList.add("action-nav");
+            nav[0].classList.add("shadow-sm");
+            nav[0].classList.remove("pt-4");
+            nav[0].classList.remove("pb-4");
+        } else {
+            nav[0].classList.remove("action-nav");
+            nav[0].classList.remove("shadow-sm");
+            nav[0].classList.add("pt-4");
+            nav[0].classList.add("pb-4");
+        }
+    });
+
+
+
+    // onclick()
+    $('.bt-menu-social').on("click", function () {
+        $('.bt-menu-social').toggleClass('bt-menu-social-active');
+        $('.menu-social').toggleClass('menu-social-active');
+        $('.icon-bt-social').toggleClass('icon-bt-social-active');
+    });
+
+
+
+    // loading()
+    var divlogonav = document.getElementsByClassName('active-logo-nav')
+    $(".active-logo-nav").css("display", "none");
+    document.body.style.overflow = "hidden";
+    setTimeout(
+        function () {
+            $("#loading").remove();
+            document.body.style.overflow = "auto";
+            $(".active-logo-nav").css("display", "block");
+            divlogonav[0].classList.add("div-logo-nav");
+        }, 2000);
+
+
+
+    // var waypoint = new Waypoint({
+    //     element: document.getElementById('section-landscape'),
+    //     handler: function () {
+    //         $("body").css("overflow-y", "hidden");
+    //     }
+    // })
+
+
+    var landscape = document.getElementsByTagName('MAIN')[0];
+    window.addEventListener('wheel', function (e) {
+        if (e.deltaY > 0) landscape.scrollLeft += 100;
+        else landscape.scrollLeft -= 100;
+    });
+</script>
+
+</html>

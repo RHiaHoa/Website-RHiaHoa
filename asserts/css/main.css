@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Mitr:200,400,700&display=swap&subset=latin-ext,thai,vietnamese');
+* {
+    font-size: 8px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    cursor: pointer;
+}
+
+/* .wrapper>div {
+    width: 2000px;
+    height: 100vh;
+    pointer-events: none;
+    flex: 0 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: auto;
+} */
+
+/* ////////// loading ///////// */
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: .9;
+    background-color: #222;
+    text-align: center;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #f79031;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+        top: 8px;
+        height: 64px;
+    }
+    50%, 100% {
+        top: 24px;
+        height: 32px;
+    }
+}
+
+/* ////////// end loading ///////// */
+
+a {
+    text-decoration: none !important;
+}
+
+.border-radius-div {
+    border-radius: 10px;
+}
+
+.crop-img {
+    object-fit: cover;
+}
+
+.fonts {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 400;
+}
+
+.fonts-head {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 700;
+}
+
+.color-1 {
+    color: #f79031;
+}
+
+.color-2 {
+    color: #282828
+}
+
+.color-3 {
+    color: #FFF;
+}
+
+.bg-color-1 {
+    background-color: #f79031;
+}
+
+.bg-color-2 {
+    background-color: #282828;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.fonts-detail {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 200;
+}
+
+.fonts-size-1 {
+    font-size: 1.5em;
+}
+
+.fonts-size-1-2 {
+    font-size: 1.2em;
+}
+
+/* ////////// footer ///////// */
+
+.text-letter-footter {
+    letter-spacing: 1px;
+}
+
+.logo-footer {
+    height: 20px;
+}
+
+.size-icon-footer {
+    font-size: 2.5rem;
+}
+
+.fonts-detail>p {
+    font-size: 9rm;
+}
+
+.size-icon-footer:hover {
+    animation: swing 1.3s;
+}
+
+/* ////////// end footer ///////// */
+
+/* ////////// navbar ///////// */
+
+.div-logo-nav {
+    animation: bounceInLeft 1.3s;
+}
+
+.size-logo-nav {
+    height: 20px;
+}
+
+.size-logo-nav:hover {
+    animation: rubberBand 1.3s;
+}
+
+.active-cus {
+    border-left: #f79031 solid 5px;
+    padding-left: 5px;
+    color: #282828 !important;
+    transition: 0.5s all;
+}
+
+.hover-orange:hover {
+    color: #f79031 !important;
+}
+
+.nav-bar {
+    z-index: 3;
+    right: 0;
+    left: 0;
+    transition: 0.5s all;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 1);
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+}
+
+.action-nav {
+    background: rgba(255, 255, 255, 0.6);
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.bt-menu-mobile {
+    display: none;
+}
+
+.border-set {
+    border-bottom: 1px solid rgba(219, 219, 219, 0.1);
+}
+
+/* ////////// end navbar ///////// */
+
+/* ////////// area 2 ///////// */
+
+.div-area-2 {
+    margin-top: -50px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #FFF;
+}
+
+.text-name-area2>span {
+    font-size: 4em;
+    line-height: 28px;
+    letter-spacing: 5px;
+}
+
+.text-address-area2>span {
+    font-size: 1.6em;
+}
+
+.text-detail-area2 {
+    font-size: 1.5em;
+    color: #b9b9b9;
+}
+
+.text-social-area2>a>i {
+    font-size: 3em;
+    color: #b9b9b9;
+    margin-right: 12px;
+}
+
+.text-social-area2-active:hover {
+    animation: pulse 0.5s;
+}
+
+.img-area-2 {
+    height: 200px;
+    margin-bottom: 45px;
+    filter: grayscale(60%);
+    background-image: url(../img/profile/20191024_151017.jpg);
+}
+
+/* ////////// end area 2 ///////// */
+
+/* ////////// map ///////// */
+
+.size-map {
+    width: 100%;
+    height: 400px;
+}
+
+/* ////////// end map ///////// */
+
+/* ////////// menu-social ///////// */
+
+.menu-social {
+    position: fixed;
+    height: 320px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.99);
+    z-index: 3;
+    top: 50%;
+    margin-top: -160px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -100px;
+    transition: 0.5s all;
+}
+
+.icon-hover:hover>.icon-social {
+    animation: pulse 0.5s;
+}
+
+.icon-hover:hover>.img-social {
+    animation: pulse 0.5s;
+}
+
+.icon-bt-social {
+    margin-left: 20px;
+    transition: 0.8s all;
+}
+
+.icon-bt-social-active {
+    margin-left: 0px;
+}
+
+.icon-social {
+    font-size: 6em;
+}
+
+.color-line {
+    color: #00c300;
+}
+
+.color-facabook {
+    color: #3b5998;
+}
+
+.img-social {
+    width: 45px;
+    height: 45px;
+}
+
+.menu-social-active {
+    margin-left: 0px;
+}
+
+.bt-menu-social {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #FFF;
+    z-index: 3;
+    top: 50%;
+    margin-top: -25px;
+    border-radius: 50%;
+    right: 0;
+    margin-right: -25px;
+}
+
+.bt-menu-social-2 {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.0);
+    z-index: 3;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    right: 0;
+}
+
+.bt-menu-social-active {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* ////////// end-menu-social ///////// */
+
+/* ////////// responsive ////////// */
+
+@media (max-width: 576px) {
+    /* ////////// navbar ///////// */
+    .size-logo-nav {
+        height: 15px;
+    }
+    .logo-footer {
+        height: 15px;
+    }
+    .nav-bar {
+        right: 0;
+        left: 0;
+        transition: 0.5s all;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 1);
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .action-nav {
+        background: rgba(255, 255, 255, 0.6);
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    /* ////////// end navbar ///////// */
+}
+
+@media (max-width: 768px) {
+    /* ////////// navbar ///////// */
+    .menu-pc {
+        display: none;
+    }
+    .bt-menu-mobile {
+        display: block;
+    }
+    /* ////////// end navbar ///////// */
+}
+
+@media (max-width: 992px) {
+    .col-res {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1200px) {}
+
+/* ////////// responsive ////////// */
+
+/* ////////// new feature ////////// */
+
+/* div เอียง */
+
+.div-skewX {
+    transform: skewX(30deg);
+    transform-origin: top right;
+}
+
+.bg-fixde {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url(/asserts/img/business-computer-connection-contemporary-450035.jpg); */
+}
+
+/* ////////// end new feature ////////// */

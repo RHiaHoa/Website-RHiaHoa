@@ -1,0 +1,51 @@
+.div-vdo {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.div-vdo video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.div-vdo .container {
+    position: relative;
+    z-index: 2;
+}
+
+.div-vdo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.text-head-vdo {
+    letter-spacing: 20px;
+}
+
+.text-detail-vdo {
+    letter-spacing: 4px;
+}
+
+
+
